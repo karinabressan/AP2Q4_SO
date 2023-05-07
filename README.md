@@ -23,8 +23,9 @@ Tarefas:
 [x] - Fazer clone do repositorio 
 [x] - Criar um SH com o nome Karina_ultimoacesso.sh
 [x] - encontrar data atual
-[ ] - encontrar data inicial
-[ ] - Descobrir diretório base
+[x] - Calcular a data inicial (hoje - 2 dias)
+[ ] - Receber a data inicial por parametro
+[ ] - Receber argumento de diretório base
 [ ] - encontrar arquivos acessados 
 [ ] - encontrar arquivos acessados dentro do período de tempo 
 [ ] - Escrever um arquivo de saída com o nome Karina_AcessoRecente_<diretoriobase>_<dataorigem>.txt
