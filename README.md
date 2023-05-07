@@ -24,8 +24,8 @@ Tarefas:
 [x] - Criar um SH com o nome Karina_ultimoacesso.sh
 [x] - encontrar data atual
 [x] - Calcular a data inicial (hoje - 2 dias)
-[ ] - Receber a data inicial por parametro
-[ ] - Receber argumento de diretório base
+[x] - encontrar diretório base e passar por parametro
+[x] - verifica se o diretorio informado é valido, se nao for, usa o diretorio atual
 [ ] - encontrar arquivos acessados 
 [ ] - encontrar arquivos acessados dentro do período de tempo 
 [ ] - Escrever um arquivo de saída com o nome Karina_AcessoRecente_<diretoriobase>_<dataorigem>.txt
