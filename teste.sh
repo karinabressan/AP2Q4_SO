@@ -19,6 +19,8 @@ if test -d "$diretorioArgumento"; then
 # Se o usuário do argumento não existir ou não for informado, será utilizado o usuário atual.
 fi
 
+# encontrando arquivos acessados dentro de um periodo de tempo de 2 dias a partir do diretorio atual
+find "$diretorioAtual" -type f -atime -2 -exec echo {} \;
 # sessao de teste
 echo "$diretorioBase"
 

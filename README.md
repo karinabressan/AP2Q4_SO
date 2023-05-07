@@ -26,8 +26,8 @@ Tarefas:
 [x] - Calcular a data inicial (hoje - 2 dias)
 [x] - encontrar diretório base e passar por parametro
 [x] - verifica se o diretorio informado é valido, se nao for, usa o diretorio atual
-[ ] - encontrar arquivos acessados 
-[ ] - encontrar arquivos acessados dentro do período de tempo 
+[x] - encontrar arquivos acessados 
+[x] - encontrar arquivos acessados dentro do período de tempo 
 [ ] - Escrever um arquivo de saída com o nome Karina_AcessoRecente_<diretoriobase>_<dataorigem>.txt
 [ ] - agrupar arquivos por diretório OU data, com a informação do diretório na linha
 
