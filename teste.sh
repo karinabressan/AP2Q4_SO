@@ -19,10 +19,15 @@ if test -d "$diretorioArgumento"; then
 # Se o usuário do argumento não existir ou não for informado, será utilizado o usuário atual.
 fi
 
+nomeDiretorio=$(basename "$diretorioAtual")
+# Variável para criar o nome do arquivo com padrão de nome Karina_AcessoRecente_<diretoriobase>_<dataorigem>.txt 
+nomeArquivo="Karina_AcessoRecente_"$nomeDiretorio"_"$hoje".txt"
+
 # encontrando arquivos acessados dentro de um periodo de tempo de 2 dias a partir do diretorio atual
-find "$diretorioAtual" -type f -atime -2 -exec echo {} \;
+totalAcessados=$(find "$diretorioAtual" -type f -atime -2 -printf "%a %p\n")
+
+# Criando o arquivo
+echo "$totalAcessados" > $nomeArquivo
+
 # sessao de teste
-echo "$diretorioBase"
-
-variavel=asuidhasiduhasiduha
-
+echo "$nomeArquivo"
