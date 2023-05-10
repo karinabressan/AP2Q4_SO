@@ -16,8 +16,15 @@ diretorioArgumento=$1
 # Se o diretorio do argumento existe, será utilizado.
 if test -d "$diretorioArgumento"; then
     diretorioAtual=$diretorioArgumento
-# Se o usuário do argumento não existir ou não for informado, será utilizado o usuário atual.
+# Se o diretório do argumento não existir ou não for informado, será utilizado o diretório atual.
 fi
 
+nomeDiretorio=$(basename "$diretorioAtual")
+# Variável para criar o nome do arquivo com padrão de nome Karina_AcessoRecente_<diretoriobase>_<dataorigem>.txt 
+nomeArquivo="Karina_AcessoRecente_"$nomeDiretorio"_"$hoje".txt"
+
 # encontrando arquivos acessados dentro de um periodo de tempo de 2 dias a partir do diretorio atual
-find "$diretorioAtual" -type f -atime -2 -exec echo {} \;
+totalAcessados=$(find "$diretorioAtual" -type f -atime -2 -printf "%a %p\n")
+
+# Criando o arquivo
+echo "$totalAcessados" > $nomeArquivo
